@@ -18,22 +18,21 @@ function binarySearch() {
     const key = 112;
 
     let left = 0;
-    let right = arr.length -1;
+    let right = arr.length - 1;
     let mid = Math.floor((left + right) / 2);
-
+    
     while(left <= right) {
-        if(arr[mid] === key) {
+        if(key === arr[mid]) {
             return 'Data found at index ' + mid;
         }
         else if (arr[mid] > key) {
-             left = left;
-             right = mid - 1;
+            left = left;
+            right = mid - 1;
         }
         else {
             right = right;
             left = mid + 1;
         }
-
         mid = Math.floor((left + right) / 2);
     }
 
