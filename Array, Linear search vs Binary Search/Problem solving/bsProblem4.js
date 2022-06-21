@@ -3,7 +3,7 @@
 let arr = [255, 200, 140, 112, 100, 58, 45, 37, 33, 25, 12];
 
 function binarySearch() {
-    const key = 60;
+    const key = 300;
     let left = 0;
     let right = arr.length - 1;
     let mid = Math.floor((left + right) / 2);
@@ -21,11 +21,14 @@ function binarySearch() {
         mid = Math.floor((left + right) / 2);
     }
 
-    if(arr[mid+1]) {
+    if(arr[mid+1] && arr[mid]) {
         return 'Celing value is: ' + arr[mid] + ' and Flooring value is: ' + arr[mid+1];
-    } else {
-        return 'Celing value is: ' + arr[mid] +
-         ` But Flooring value isn't applicable for this number.`;
+    }
+    else if (arr[mid+1] && !arr[mid]) {
+        return `Flooring vaue is ${arr[mid+1]} But Celing value isn't available for this number`;
+    }
+    else {
+        return `Celing value is: ${arr[mid]} But Flooring value isn't available for this number.`;
     }
 }
 
