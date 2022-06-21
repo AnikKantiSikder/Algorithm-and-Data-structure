@@ -7,11 +7,13 @@ let arr = [255, 200, 140, 112, 100, 58, 45, 37, 33, 25, 12];
 
 
 function oaBinarySearch(){
-    const key = 100;
+    const key = 50;
 
     let left = 0;
     let right = arr.length -1;
     let mid = Math.floor((left + right) / 2);
+
+    //let middle = left + Math.floor((right - left) / 2);
 
     let isAsc;
 
