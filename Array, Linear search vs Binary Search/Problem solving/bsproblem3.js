@@ -5,7 +5,7 @@ let arr = [12, 25, 33, 37, 45, 58, 100, 112, 140, 200, 255];
 
 function binarySearch() {
 
-    const key = 300;
+    const key = 10;
     let left = 0;
     let right = arr.length - 1;
     let mid = Math.floor((left + right) / 2);

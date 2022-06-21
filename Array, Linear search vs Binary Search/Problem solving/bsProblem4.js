@@ -1,3 +1,4 @@
+
 // Find out flooring and celing value from a sorted array(Descending order)
 
 let arr = [255, 200, 140, 112, 100, 58, 45, 37, 33, 25, 12];
